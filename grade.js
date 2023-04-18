@@ -1,4 +1,4 @@
-let myGrade = 87
+let myGrade = 93
 if (myGrade <= 100 && myGrade >= 90){
     console.log("Your letter grade is A")
 }
