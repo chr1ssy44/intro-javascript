@@ -1,0 +1,36 @@
+#start_button{
+    color:plum;
+    background-color:white;
+    border-radius: 8px;
+    text-decoration: underline;
+    border-color:linen;
+}
+#start_button:hover{
+    background-color:lightblue;
+}
+
+#stop_button{
+    color: plum;
+    background-color:white;
+    border-radius: 8px;
+    text-decoration: underline;
+    border-color:linen;
+}
+#stop_button:hover{
+    background-color:lightblue;
+}
+
+#reset_button:hover{
+    background-color:lightblue;
+}
+#reset_button{
+    color: plum;
+    background-color:white;
+    border-radius: 8px;
+    text-decoration: underline;
+    border-color:linen;
+}
+
+#digits{
+    text-align: center;
+}

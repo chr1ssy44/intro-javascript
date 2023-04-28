@@ -1,6 +1,6 @@
 let aquarium = document.getElementById("aquarium")
-
 let turtle = new RealTurtle.default(aquarium, {autoStart: true})
+
 turtle.setSpeed(0.9)
 turtle.setStrokeColorRGB(255 , 0, 0)
 
