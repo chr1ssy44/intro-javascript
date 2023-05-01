@@ -1,11 +1,39 @@
+let milliseconds = 0
+let seconds = 0
+let minutes = 0
+
+let digits = document.getElementById('digits')
+
+let interval;
+
 function startButton () {
-    alert("You clicked on this button")
+    resetButton()
+
+    interval = setInterval(function () {
+        milliseconds = milliseconds + 10
+    
+
+    if (milliseconds >= 1000) {
+        seconds = seconds + 1
+        milliseconds = 0
+    }
+    if (seconds >= 60){
+        minutes +=1
+        seconds = 0
+    }
+
+digits.innerHTML = minutes + ':' + String(seconds).padStart(2,'0') + ':' + milliseconds /10     
+    },    10)
 }
 
 function stopButton () {
-    alert("You clicked on this button")
+    clearInterval(interval)
 }
+   
 
 function resetButton () {
-    alert("You clicked on this button")
+    clearInterval(interval)
+    milliseconds = 0
+    seconds = 0
+    minutes = 0
 }

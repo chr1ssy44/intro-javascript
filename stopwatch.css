@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+body{
+    font-family: 'Original Surfer', cursive;
+}
+
+#buttons
+{
+    display: flex;
+    justify-content: center;
+   padding: 15px 32px;
+}
 #start_button{
     color:plum;
     background-color:white;
