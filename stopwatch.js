@@ -4,10 +4,14 @@ let minutes = 0
 
 let digits = document.getElementById('digits')
 
+
+let start = document.getElementById('start-button')
+
 let interval;
 
 function startButton () {
-    resetButton()
+
+    startButton.disabled = true
 
     interval = setInterval(function () {
         milliseconds = milliseconds + 10
@@ -18,7 +22,7 @@ function startButton () {
         milliseconds = 0
     }
     if (seconds >= 60){
-        minutes +=1
+        minutes += 1
         seconds = 0
     }
 
@@ -37,3 +41,17 @@ function resetButton () {
     seconds = 0
     minutes = 0
 }
+
+function lapButton () {
+    const myList = document.getElementById('myList')
+
+    let newListItem = document.createElement('li')
+    newListItem.textContent = minutes + ':' + String(seconds).padStart(2,'0') + ':' + milliseconds /10     
+
+    myList.appendChild(newListItem)
+
+}
+
+
+
+

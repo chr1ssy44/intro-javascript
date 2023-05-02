@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="stopwatch.css">
 </head>
 <body>
-   <h1 style="text-align: center;">Stopwatch</h1>
+   <h1 style="text-align: center;text-decoration:underline;">Stopwatch</h1>
    <hr>
    <h2 id="digits">00:00:00</h2>
-   
+
 <div id="buttons">
 <button id="start_button" onclick="startButton()" >Start</button>
 <button id="stop_button" onclick="stopButton()">Stop</button>
 <button id="reset_button" onclick="resetButton()">Reset</button>
+<button id="lap_button" onclick="lapButton()">Add Lap</button>
 </div>
+<ol id="myList">
+    <li></li>
+   </ol>
 
 <script src="stopwatch.js"></script>
+<script type="text/javascript">
+
+</script>
 </body>
 </html>
